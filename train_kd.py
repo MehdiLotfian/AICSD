@@ -274,7 +274,7 @@ def main():
     parser.add_argument('--ic_lambda', type=float, default=None,
                         help='coefficient for inter class loss')
     
-    parser.add_argument('--teacher_path', type=str, default='/kaggle/working/checkpoint.pth.tar',
+    parser.add_argument('--teacher_path', type=str, default='pretrained/model.pth',
                         help='path to the pretrained teache')
 
     args = parser.parse_args()
