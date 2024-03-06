@@ -274,8 +274,8 @@ def main():
     parser.add_argument('--ic_lambda', type=float, default=None,
                         help='coefficient for inter class loss')
     
-    parser.add_argument('--teacher_path', type=str, default='pretrained/model.pth',
-                        help='path to the pretrained teache')
+    parser.add_argument('--teacher_path', type=str, default='pretrained/deeplab-resnet.pth.tar',
+                        help='path to the pretrained teacher')
 
     args = parser.parse_args()
     args.cuda = not args.no_cuda and torch.cuda.is_available()
