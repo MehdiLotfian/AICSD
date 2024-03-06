@@ -274,7 +274,7 @@ def main():
     parser.add_argument('--ic_lambda', type=float, default=None,
                         help='coefficient for inter class loss')
     
-    parser.add_argument('--teacher_path', type=str, default='pretrained/deeplab-resnet.pth.tar',
+    parser.add_argument('--teacher_path', type=str, default='AICSD/pretrained/deeplab-resnet.pth.tar',
                         help='path to the pretrained teacher')
 
     args = parser.parse_args()
